@@ -1,4 +1,5 @@
 <div class="container-fluid">
+    <?php echo $this->session->flashdata('message');  ?>
     <button class="btn btn-sm btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-plus fa-sm mr-2"></i>Tambah Barang</button>
 
     <table class="table table-bordered">

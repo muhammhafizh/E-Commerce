@@ -32,7 +32,7 @@
         <a href="<?php echo base_url('dashboard/hapus_keranjang'); ?>">
             <div class="btn btn-sm btn-danger">Hapus Keranjang</div>
         </a>
-        <a href="<?php echo base_url('dashboard/index'); ?>">
+        <a href="<?php echo base_url('welcome/index'); ?>">
             <div class="btn btn-sm btn-primary">Lanjutkan Belanja</div>
         </a>
         <a href="<?php echo base_url('dashboard/pembayaran'); ?>">

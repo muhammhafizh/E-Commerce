@@ -89,6 +89,12 @@ class Data_barang extends CI_Controller{
 
     public function hapus($id){
         $where = array('id_brg' => $id);
+        $this->session->set_flashdata('message', '
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            Data berhasil di hapus
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        ');
         $this->model_barang->hapus_data($where, 'tb_barang');
         redirect('admin/data_barang/index');
     }
